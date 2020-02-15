@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+<% include ../partials/nav.ejs %>
+<br>
+<center>
+<a href="https://huiyiz276.herokuapp.com">Home</a>
+<a href="https://huiyiz276.herokuapp.com/index">Add/Change/Delete</a></center>
+
+<br><br>
+<center>
+    <% results.forEach(function(r) { %>
+    <div class="a"><table style="width: <%=r.weight%>px; height: <%=r.height%>px">
+        <td><p style="color:<%=r.haircolor%>"><%= r.name%><span style="background-color:<%=r.eyecolor%>">&nbsp;&nbsp;&nbsp;</span> <span style="background-color:<%=r.eyecolor%>">&nbsp;&nbsp;&nbsp;</span></p><p>ID:&nbsp;<%=r.id%></p> <p><span><%= r.gender%></span></p> <p><%=r.gpa%></p></tr>
+	</table></div>
+    <% }); %>
+</center>
+
+
+
+</body>
+</html>

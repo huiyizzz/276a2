@@ -1,0 +1,49 @@
+body{
+	background-color: #FDFBF5;
+}
+
+p{
+	font-size: 14px;
+}
+
+h2{
+	color: #497742;
+}
+
+button{
+	background-color:#497742;
+	color: white;
+	border:none;
+}
+
+a{
+    background-color: #94D086;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+ 
+}
+
+table{
+	border-collapse:collapse;
+	border: 3px solid #EFB866;
+	text-align:center;
+	background-color: #FFFFFF;
+}
+
+div.a{
+	text-align:center;
+	display: inline-block;
+}
+
+input{
+	width: 120px;
+}
+
+input.b{
+	
+}

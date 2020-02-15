@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+<div>
+  <center><h2>Add Students</h2></center>
+    <center>
+      <form action="/add" method="post">
+      <input type="text" id="name" name="name" placeholder="Name" required />
+      <input type="text" id="weight" name="weight" placeholder="Weight" required />
+      <input type="text" id="height" name="height" placeholder="Height" required />
+      <input type="text" id="haircolor" name="haircolor" placeholder="Haircolor" required />
+      <input type="text" id="gpa" name="gpa" placeholder="GPA" required />
+      <input type="text" id="gender" name="gender" placeholder="Gender M/F" required />
+      <input type="text" id="birthday" name="birthday" placeholder="BD YYYY-MM-DD" required />
+      <input type="text" id="eyecolor" name="eyecolor" placeholder="Eyecolor" required />
+      <input type="text" id="id" name="id" placeholder="ID" required />
+      <button>ADD</button>
+    </form></center>
+<br><br>
+</div>
+
+<div>
+  <center><h2>Change Data</h2></center>
+    <center>
+      <form action="/update" method="post">
+      <input type="text" id="name" name="name" placeholder="Whose" required />
+      <input type="text" id="weight" name="weight" placeholder="Weight" required />
+      <input type="text" id="height" name="height" placeholder="Height" required />
+      <input type="text" id="haircolor" name="haircolor" placeholder="Haircolor" required />
+      <input type="text" id="gpa" name="gpa" placeholder="GPA" required />
+      <input type="text" id="gender" name="gender" placeholder="Gender M/F" required />
+      <input type="text" id="birthday" name="birthday" placeholder="BD YYYY-MM-DD" required />
+      <input type="text" id="eyecolor" name="eyecolor" placeholder="Eyecolor" required />
+      <input type="text" id="id" name="id" placeholder="ID" required />
+      <button>CHANGE</button>
+    </form></center>
+<br><br>
+</div>
+
+<div>
+  <center><h2>Delete Students</h2></center>
+    <center><form action="/dele" method="post">
+      <input type="text" id="id" name="id" placeholder="ID" required />
+      <button>DELETE</button>
+    </form></center>
+
+</div>
+<br><br>
+<center><a href="https://huiyiz276.herokuapp.com/db">Get Students Info</a> <a href="https://huiyiz276.herokuapp.com">Home</a></center>
+</body>
+</html>
